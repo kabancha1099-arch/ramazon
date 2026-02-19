@@ -1,0 +1,32 @@
+body{margin:0;font-family:Arial;background:#eef2f5}
+.container{text-align:center;padding:20px}
+
+.menu-icon{position:fixed;top:15px;right:20px;font-size:28px;cursor:pointer;z-index:1000}
+
+.menu,.viloyat,.duo{
+display:none;position:fixed;right:20px;background:white;padding:10px;border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.2)
+}
+.menu{top:60px;z-index:999}
+.viloyat{top:160px;z-index:998}
+.duo{top:260px;z-index:997}
+
+.show{display:block}
+
+.menu button,.viloyat button,.duo button,.search-box button,.contact-form button{
+display:block;width:100%;margin:5px 0;padding:10px;border:none;border-radius:8px;
+background:#0c3b5d;color:white;cursor:pointer
+}
+
+.main-img{margin:90px auto 30px;max-width:130px;border-radius:15px;background:white;padding:5px}
+
+.today,.result,.contact-form{
+margin-top:20px;background:white;padding:15px;border-radius:12px
+}
+
+.contact-form{display:none;text-align:left}
+.contact-form.show{display:block}
+
+body.dark{background:#111;color:white}
+body.dark .menu,body.dark .viloyat,body.dark .duo,body.dark .today,body.dark .result,body.dark .contact-form{background:#222}
+body.dark button{background:#444}

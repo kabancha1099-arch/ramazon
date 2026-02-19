@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>ramazon.uz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- ☰ MENU -->
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+    <div class="menu" id="menu">
+        <button onclick="goHome()">Bosh menyu</button>
+        <button onclick="toggleViloyat()">Viloyat</button>
+        <button onclick="toggleDuo()">Ramazon duolari</button>
+        <button onclick="showContact()">Biz bilan bog‘lanish</button>
+        <button onclick="toggleDarkMode()">Dark Mode</button>
+    </div>
+
+    <!-- Viloyatlar -->
+    <div class="viloyat" id="viloyat">
+        <button onclick="showSamarqand()">Samarqand</button>
+        <button onclick="showToshkent()">Toshkent</button>
+    </div>
+
+    <!-- DUOLAR -->
+    <div class="duo" id="duo">
+        <button onclick="showSaharDuo()">Saharlik duosi</button>
+        <button onclick="showIftarDuo()">Iftorlik duosi</button>
+    </div>
+
+    <img src="sasol.png.png" class="main-img">
+
+    <div class="today" id="today"></div>
+    <div class="result" id="result"></div>
+
+    <!-- Qidirish -->
+    <div class="search-box" id="searchBox">
+  <input type="number" id="kun" placeholder="Kun raqami (1-30)">
+  <button onclick="qidir()">Qidirish</button>
+</div>
+
+
+    <!-- Aloqa -->
+    <div class="contact-form" id="contactForm">
+        <h2>Biz bilan bog‘lanish</h2>
+        <input type="text" id="name" placeholder="Ismingiz">
+        <input type="email" id="email" placeholder="Emailingiz">
+        <textarea id="message" placeholder="Xabaringiz"></textarea>
+        <button onclick="sendMessage()">Yuborish</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
